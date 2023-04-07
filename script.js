@@ -1,10 +1,5 @@
-console.log(
-    document.querySelectorAll(".times")//seleciona todas as referencias com a classe informada
-)
+var nome = prompt("Qual é o seu nome?")
+var sobrenome = prompt("Qual é o seu sobrenome?")
 
-console.log(
-    document.getElementById("futebol-europeu").querySelectorAll(".times")//seleciona somente pelo id informado no getElementById 
-)
-console.log(
-    document.getElementById("futebol-europeu").querySelectorAll(".times")[0].innerHTML
-)
+document.write("<h1>Bem vindo "+nome+" "+sobrenome+"</h1>")
+document.write("<img src=img/Elon_Musk_.jpg />")
