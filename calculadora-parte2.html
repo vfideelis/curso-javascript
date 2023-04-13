@@ -12,15 +12,16 @@
   <label for="">Digite o primeiro número</label>
   <input type="text" id="num1">
     <br>
-  <label for="">Digite o segundo número</label>
-  <input type="text" id="num2">
-  <br>
+    <label for="">Digite o segundo número</label>
+    <input type="text" id="num2">
+    <br><br>
+    <button class="btnCalc" id="somar" onclick="calcular(this.id)">Somar</button>
+    <button class="btnCalc" id="subtrair" onclick="calcular(this.id)">Subtrair</button>
+    <button class="btnCalc" id="multiplicar" onclick="calcular(this.id)">Multiplicar</button>
+    <button class="btnCalc" id="dividir" onclick="calcular(this.id)">Dividir</button>
+     <br><br>
+    <input type="text" id="resultado" value="resultado" disabled="disable">
 
-    <button class="btnCalc" id="somar" onclick="somar()">Somar</button>
-    <button class="btnCalc" id="subtrair" onclick="subtrair()">Subtrair</button>
-    <button class="btnCalc" id="multiplicar" onclick="multiplicar()">Multiplicar</button>
-    <button class="btnCalc" id="dividir" onclick="dividir()">Dividir</button>
-
- <script src="script.js"></script>
+ <script src="calculadora-parte2.js"></script>
 </body>
 </html>

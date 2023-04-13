@@ -2,51 +2,52 @@
     let numero1 = parseInt(document.getElementById("num1").value);
     let numero2 = parseInt(document.getElementById("num2").value);
     let resultado = numero1 + numero2;
-    alert("O resultado da soma é = " +resultado);
+   //  alert("O resultado da soma é = " +resultado);
+      document.getElementById("resultado").value = resultado;
     
  }
  function subtrair(){
     let numero1 = parseInt(document.getElementById("num1").value);
     let numero2 = parseInt(document.getElementById("num2").value);
     let resultado = numero1 - numero2;
-    alert("O resultado da subtração é = " +resultado);
+   //  alert("O resultado da subtração é = " +resultado);
+   document.getElementById("resultado").value = resultado;
 
  }
  function multiplicar(){
     let numero1 = parseInt(document.getElementById("num1").value);
     let numero2 = parseInt(document.getElementById("num2").value);
     let resultado = numero1 * numero2;
-    alert("O resultado da multiplicação é = " +resultado);
-
+   //  alert("O resultado da multiplicação é = " +resultado);
+   document.getElementById("resultado").value = resultado;
  }
  function dividir(){
     let numero1 = parseInt(document.getElementById("num1").value);
     let numero2 = parseInt(document.getElementById("num2").value);
     let resultado = numero1 / numero2;
-    alert("O resultado da divisão é = " +resultado);
-
+   //  alert("O resultado da divisão é = " +resultado);
+    document.getElementById("resultado").value = resultado;
  }
 
- function calcular (){
-   let conta = document.getElementsByClassName("btnCalc")[0].innerHTML
+ function calcular(qualquerNome){
+ 
+   if(qualquerNome=="somar"){
+      somar();
+   
+   }
 
-   if (conta=="Somar"){
-      let numero1 = parseInt(document.getElementById("num1").value);
-      let numero2 = parseInt(document.getElementById("num2").value);
-      let resultado = numero1 + numero2;
-      alert("O resultado da soma é = " +resultado);
+   if(qualquerNome=="subtrair"){
+      subtrair();
+      
+   }
+   
+   if(qualquerNome=="multiplicar"){
+      multiplicar();
       
    }
 
-   if(conta=="Subtrair"){
-      subtrair();
-   }
-   
-   if(conta=="multiplicar"){
-      multiplicar();
-   }
-
-   if(conta=="dividir"){
+   if(qualquerNome=="dividir"){
       dividir();
+     
    }
  }
